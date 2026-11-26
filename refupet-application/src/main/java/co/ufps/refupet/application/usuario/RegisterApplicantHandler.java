@@ -1,0 +1,35 @@
+package co.ufps.refupet.application.usuario;
+
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.EmailAlreadyRegisteredException;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.Solicitante;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+
+/**
+ * Regla 18: registrar a un solicitante de adopción (queda pendiente de aprobación).
+ */
+@ApplicationScoped
+public class RegisterApplicantHandler {
+
+    private final IUsuarioRepository usuarioRepository;
+
+    @Inject
+    public RegisterApplicantHandler(IUsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
+    }
+
+    @Transactional
+    public SolicitanteDTO execute(RegisterApplicantCommand command) {
+        Email email = command.toEmail();
+        if (usuarioRepository.existsByEmail(email)) {
+            throw new EmailAlreadyRegisteredException("Ya existe un usuario registrado con el email " + email.value());
+        }
+        Solicitante solicitante = Solicitante.create(
+                command.nombre(), email, command.telefono(), command.direccion());
+        usuarioRepository.save(solicitante);
+        return SolicitanteDTO.from(solicitante);
+    }
+}

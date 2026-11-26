@@ -1,11 +1,10 @@
 package co.ufps.refupet.application;
 
-import co.ufps.refupet.application.commands.animal.RegisterAnimalCommand;
-import co.ufps.refupet.application.commands.cuarentena.StartQuarantineCommand;
-import co.ufps.refupet.application.commands.usuario.CreateUserCommand;
-import co.ufps.refupet.application.commands.usuario.RegisterApplicantCommand;
-import co.ufps.refupet.application.queries.adopcion.ListAdoptionRequestsQuery;
-import co.ufps.refupet.application.services.FechaOperacion;
+import co.ufps.refupet.application.adopcion.ListAdoptionRequestsQuery;
+import co.ufps.refupet.application.animal.RegisterAnimalCommand;
+import co.ufps.refupet.application.cuarentena.StartQuarantineCommand;
+import co.ufps.refupet.application.usuario.CreateUserCommand;
+import co.ufps.refupet.application.usuario.RegisterApplicantCommand;
 import co.ufps.refupet.domain.InvalidDomainDataException;
 import co.ufps.refupet.domain.adopcion.EstadoSolicitudAdopcion;
 import co.ufps.refupet.domain.animal.Especie;

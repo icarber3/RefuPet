@@ -1,6 +1,6 @@
 package co.ufps.refupet.api.dto;
 
-import co.ufps.refupet.application.commands.clinica.UpdateAnimalHealthCommand;
+import co.ufps.refupet.application.clinica.UpdateAnimalHealthCommand;
 
 /** Cuerpo JSON de {@code PUT /api/animales/{id}/estado-salud}. La validación de los campos la hacen el Command y el dominio. */
 public record ActualizarEstadoSaludRequest(String estadoSalud) {

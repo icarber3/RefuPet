@@ -1,0 +1,42 @@
+package co.ufps.refupet.application.cuarentena;
+
+import co.ufps.refupet.application.seguridad.ValidateRolePermissionCommand;
+import co.ufps.refupet.application.seguridad.ValidateRolePermissionHandler;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * Regla 13: consultar los animales que se encuentran en cuarentena, con los datos de su cuarentena activa.
+ */
+@ApplicationScoped
+public class GetAnimalsInQuarantineHandler {
+
+    private final IAnimalRepository animalRepository;
+    private final CuarentenaService cuarentenas;
+    private final ValidateRolePermissionHandler permisos;
+
+    @Inject
+    public GetAnimalsInQuarantineHandler(IAnimalRepository animalRepository, CuarentenaService cuarentenas,
+                                         ValidateRolePermissionHandler permisos) {
+        this.animalRepository = animalRepository;
+        this.cuarentenas = cuarentenas;
+        this.permisos = permisos;
+    }
+
+    public List<CuarentenaDTO> execute(GetAnimalsInQuarantineQuery query) {
+        permisos.execute(new ValidateRolePermissionCommand(query.actorId(), Operacion.CONSULTAR_CUARENTENAS));
+        return animalRepository.findByUbicacion(EstadoUbicacionAnimal.CUARENTENA).stream()
+                .map(Animal::getAnimalId)
+                .map(cuarentenas::activaDe)
+                .flatMap(Optional::stream)
+                .map(cuarentenas::toDTO)
+                .toList();
+    }
+}

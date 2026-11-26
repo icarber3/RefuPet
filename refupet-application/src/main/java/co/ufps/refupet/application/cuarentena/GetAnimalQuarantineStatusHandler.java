@@ -1,0 +1,50 @@
+package co.ufps.refupet.application.cuarentena;
+
+import co.ufps.refupet.application.seguridad.ValidateRolePermissionCommand;
+import co.ufps.refupet.application.seguridad.ValidateRolePermissionHandler;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalNotFoundException;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+
+import java.util.Comparator;
+import java.util.Optional;
+
+/**
+ * Devuelve la cuarentena activa del animal o, si no tiene, la más reciente.
+ * Vacío si el animal nunca estuvo en cuarentena.
+ */
+@ApplicationScoped
+public class GetAnimalQuarantineStatusHandler {
+
+    private final IAnimalRepository animalRepository;
+    private final ICuarentenaRepository cuarentenaRepository;
+    private final CuarentenaService cuarentenas;
+    private final ValidateRolePermissionHandler permisos;
+
+    @Inject
+    public GetAnimalQuarantineStatusHandler(IAnimalRepository animalRepository,
+                                            ICuarentenaRepository cuarentenaRepository,
+                                            CuarentenaService cuarentenas, ValidateRolePermissionHandler permisos) {
+        this.animalRepository = animalRepository;
+        this.cuarentenaRepository = cuarentenaRepository;
+        this.cuarentenas = cuarentenas;
+        this.permisos = permisos;
+    }
+
+    public Optional<CuarentenaDTO> execute(GetAnimalQuarantineStatusQuery query) {
+        permisos.execute(new ValidateRolePermissionCommand(query.actorId(), Operacion.CONSULTAR_CUARENTENAS));
+        AnimalId animalId = query.toAnimalId();
+        if (!animalRepository.existsById(animalId)) {
+            throw new AnimalNotFoundException(animalId);
+        }
+        Optional<Cuarentena> cuarentena = cuarentenas.activaDe(animalId)
+                .or(() -> cuarentenaRepository.findByAnimalId(animalId).stream()
+                        .max(Comparator.comparing(c -> c.getPeriodo().fechaInicio())));
+        return cuarentena.map(cuarentenas::toDTO);
+    }
+}

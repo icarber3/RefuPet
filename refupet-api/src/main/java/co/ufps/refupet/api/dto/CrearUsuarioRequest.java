@@ -1,6 +1,6 @@
 package co.ufps.refupet.api.dto;
 
-import co.ufps.refupet.application.commands.usuario.CreateUserCommand;
+import co.ufps.refupet.application.usuario.CreateUserCommand;
 
 /** Cuerpo JSON de {@code POST /api/usuarios}. La validación de los campos la hacen el Command y el dominio. */
 public record CrearUsuarioRequest(String nombre, String email, String rol, String telefono, String direccion) {

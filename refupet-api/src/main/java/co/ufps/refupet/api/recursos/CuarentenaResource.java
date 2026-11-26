@@ -1,15 +1,15 @@
 package co.ufps.refupet.api.recursos;
 
-import co.ufps.refupet.application.commands.cuarentena.AuthorizeQuarantineExitCommand;
-import co.ufps.refupet.application.commands.cuarentena.MoveAnimalToGeneralPopulationCommand;
-import co.ufps.refupet.application.dto.AnimalDTO;
-import co.ufps.refupet.application.dto.CuarentenaDTO;
-import co.ufps.refupet.application.handlers.cuarentena.AuthorizeQuarantineExitHandler;
-import co.ufps.refupet.application.handlers.cuarentena.CheckMinimumQuarantinePeriodHandler;
-import co.ufps.refupet.application.handlers.cuarentena.GetQuarantineHandler;
-import co.ufps.refupet.application.handlers.cuarentena.MoveAnimalToGeneralPopulationHandler;
-import co.ufps.refupet.application.queries.cuarentena.CheckMinimumQuarantinePeriodQuery;
-import co.ufps.refupet.application.queries.cuarentena.GetQuarantineQuery;
+import co.ufps.refupet.application.animal.AnimalDTO;
+import co.ufps.refupet.application.cuarentena.AuthorizeQuarantineExitCommand;
+import co.ufps.refupet.application.cuarentena.AuthorizeQuarantineExitHandler;
+import co.ufps.refupet.application.cuarentena.CheckMinimumQuarantinePeriodHandler;
+import co.ufps.refupet.application.cuarentena.CheckMinimumQuarantinePeriodQuery;
+import co.ufps.refupet.application.cuarentena.CuarentenaDTO;
+import co.ufps.refupet.application.cuarentena.GetQuarantineHandler;
+import co.ufps.refupet.application.cuarentena.GetQuarantineQuery;
+import co.ufps.refupet.application.cuarentena.MoveAnimalToGeneralPopulationCommand;
+import co.ufps.refupet.application.cuarentena.MoveAnimalToGeneralPopulationHandler;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.HeaderParam;

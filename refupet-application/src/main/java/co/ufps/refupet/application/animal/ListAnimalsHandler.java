@@ -1,0 +1,31 @@
+package co.ufps.refupet.application.animal;
+
+import co.ufps.refupet.application.seguridad.ValidateRolePermissionCommand;
+import co.ufps.refupet.application.seguridad.ValidateRolePermissionHandler;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+
+import java.util.List;
+
+/**
+ * Regla 2: consultar los animales registrados.
+ */
+@ApplicationScoped
+public class ListAnimalsHandler {
+
+    private final IAnimalRepository animalRepository;
+    private final ValidateRolePermissionHandler permisos;
+
+    @Inject
+    public ListAnimalsHandler(IAnimalRepository animalRepository, ValidateRolePermissionHandler permisos) {
+        this.animalRepository = animalRepository;
+        this.permisos = permisos;
+    }
+
+    public List<AnimalDTO> execute(ListAnimalsQuery query) {
+        permisos.execute(new ValidateRolePermissionCommand(query.actorId(), Operacion.CONSULTAR_ANIMALES));
+        return animalRepository.findAll().stream().map(AnimalDTO::from).toList();
+    }
+}

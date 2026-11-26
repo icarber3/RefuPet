@@ -1,6 +1,6 @@
 package co.ufps.refupet.api.dto;
 
-import co.ufps.refupet.application.commands.clinica.RegisterSterilizationCommand;
+import co.ufps.refupet.application.clinica.RegisterSterilizationCommand;
 import java.time.LocalDate;
 
 /** Cuerpo JSON de {@code POST /api/animales/{id}/esterilizacion}. La validación de los campos la hacen el Command y el dominio. */

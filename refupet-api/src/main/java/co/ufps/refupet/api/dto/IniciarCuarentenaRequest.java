@@ -1,6 +1,6 @@
 package co.ufps.refupet.api.dto;
 
-import co.ufps.refupet.application.commands.cuarentena.StartQuarantineCommand;
+import co.ufps.refupet.application.cuarentena.StartQuarantineCommand;
 
 import java.time.LocalDate;
 

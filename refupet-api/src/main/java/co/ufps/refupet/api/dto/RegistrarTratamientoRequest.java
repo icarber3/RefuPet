@@ -1,6 +1,6 @@
 package co.ufps.refupet.api.dto;
 
-import co.ufps.refupet.application.commands.clinica.RegisterTreatmentCommand;
+import co.ufps.refupet.application.clinica.RegisterTreatmentCommand;
 import java.time.LocalDate;
 
 /** Cuerpo JSON de {@code POST /api/animales/{id}/tratamientos}. La validación de los campos la hacen el Command y el dominio. */

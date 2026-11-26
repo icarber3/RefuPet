@@ -1,10 +1,10 @@
 package co.ufps.refupet.api.recursos;
 
 import co.ufps.refupet.api.dto.RegistrarSolicitanteRequest;
-import co.ufps.refupet.application.dto.SolicitanteDTO;
-import co.ufps.refupet.application.handlers.usuario.GetApplicantHandler;
-import co.ufps.refupet.application.handlers.usuario.RegisterApplicantHandler;
-import co.ufps.refupet.application.queries.usuario.GetApplicantQuery;
+import co.ufps.refupet.application.usuario.GetApplicantHandler;
+import co.ufps.refupet.application.usuario.GetApplicantQuery;
+import co.ufps.refupet.application.usuario.RegisterApplicantHandler;
+import co.ufps.refupet.application.usuario.SolicitanteDTO;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
