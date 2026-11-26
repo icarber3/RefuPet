@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.adopcion;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.SolicitudAdopcionId;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcionId;
 
 /**
  * Regla 21: evaluar aspectos básicos de compatibilidad de una solicitud.

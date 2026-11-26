@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.clinica;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Regla 11: el veterinario actualiza el estado de salud del animal.

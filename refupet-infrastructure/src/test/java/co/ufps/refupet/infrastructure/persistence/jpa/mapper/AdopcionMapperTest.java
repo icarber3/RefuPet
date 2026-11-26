@@ -1,15 +1,15 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Adopcion;
-import co.ufps.refupet.domain.entities.SeguimientoAdopcion;
-import co.ufps.refupet.domain.enums.EstadoAdopcion;
-import co.ufps.refupet.domain.exceptions.InvalidAdoptionStateException;
-import co.ufps.refupet.domain.ids.AdopcionId;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.SeguimientoAdopcionId;
-import co.ufps.refupet.domain.ids.SolicitudAdopcionId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.Devolucion;
+import co.ufps.refupet.domain.adopcion.Adopcion;
+import co.ufps.refupet.domain.adopcion.AdopcionId;
+import co.ufps.refupet.domain.adopcion.Devolucion;
+import co.ufps.refupet.domain.adopcion.EstadoAdopcion;
+import co.ufps.refupet.domain.adopcion.InvalidAdoptionStateException;
+import co.ufps.refupet.domain.adopcion.SeguimientoAdopcion;
+import co.ufps.refupet.domain.adopcion.SeguimientoAdopcionId;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcionId;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.AdopcionJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.SeguimientoAdopcionJpa;
 import org.junit.jupiter.api.Test;

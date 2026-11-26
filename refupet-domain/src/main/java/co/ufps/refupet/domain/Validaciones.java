@@ -1,7 +1,5 @@
 package co.ufps.refupet.domain;
 
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
-
 import java.util.Locale;
 
 /**

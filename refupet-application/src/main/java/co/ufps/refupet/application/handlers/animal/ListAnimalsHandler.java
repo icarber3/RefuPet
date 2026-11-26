@@ -4,8 +4,8 @@ import co.ufps.refupet.application.commands.seguridad.ValidateRolePermissionComm
 import co.ufps.refupet.application.dto.AnimalDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.queries.animal.ListAnimalsQuery;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

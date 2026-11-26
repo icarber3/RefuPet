@@ -1,7 +1,7 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.repository;
 
-import co.ufps.refupet.domain.entities.RegistroClinico;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.clinica.RegistroClinico;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.RegistroClinicoJpa;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;

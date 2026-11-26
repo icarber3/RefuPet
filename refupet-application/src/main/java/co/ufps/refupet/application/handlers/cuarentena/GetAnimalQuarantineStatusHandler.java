@@ -5,12 +5,12 @@ import co.ufps.refupet.application.dto.CuarentenaDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.queries.cuarentena.GetAnimalQuarantineStatusQuery;
 import co.ufps.refupet.application.services.CuarentenaService;
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.exceptions.AnimalNotFoundException;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
-import co.ufps.refupet.domain.repositories.ICuarentenaRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalNotFoundException;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

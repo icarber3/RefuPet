@@ -1,8 +1,8 @@
 package co.ufps.refupet.application.commands.usuario;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 
 /**
  * Regla 27: modificar la información de un usuario.

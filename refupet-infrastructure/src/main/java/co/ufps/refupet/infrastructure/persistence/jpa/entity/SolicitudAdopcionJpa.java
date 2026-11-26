@@ -1,6 +1,6 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.entity;
 
-import co.ufps.refupet.domain.enums.EstadoSolicitudAdopcion;
+import co.ufps.refupet.domain.adopcion.EstadoSolicitudAdopcion;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

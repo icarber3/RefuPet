@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.memory;
 
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.enums.EstadoUbicacionAnimal;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
 
 import java.util.List;
 import java.util.Optional;

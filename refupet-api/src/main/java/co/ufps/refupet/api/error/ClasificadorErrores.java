@@ -1,10 +1,10 @@
 package co.ufps.refupet.api.error;
 
-import co.ufps.refupet.domain.exceptions.DomainException;
-import co.ufps.refupet.domain.exceptions.InvalidClinicalDataException;
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
-import co.ufps.refupet.domain.exceptions.ResourceNotFoundException;
-import co.ufps.refupet.domain.exceptions.UnauthorizedRoleOperationException;
+import co.ufps.refupet.domain.DomainException;
+import co.ufps.refupet.domain.InvalidDomainDataException;
+import co.ufps.refupet.domain.ResourceNotFoundException;
+import co.ufps.refupet.domain.clinica.InvalidClinicalDataException;
+import co.ufps.refupet.domain.usuario.UnauthorizedRoleOperationException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.MediaType;

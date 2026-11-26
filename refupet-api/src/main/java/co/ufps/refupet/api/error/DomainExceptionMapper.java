@@ -1,6 +1,6 @@
 package co.ufps.refupet.api.error;
 
-import co.ufps.refupet.domain.exceptions.DomainException;
+import co.ufps.refupet.domain.DomainException;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
 import jakarta.ws.rs.ext.Provider;

@@ -1,6 +1,6 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.entity;
 
-import co.ufps.refupet.domain.enums.EstadoAdopcion;
+import co.ufps.refupet.domain.adopcion.EstadoAdopcion;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

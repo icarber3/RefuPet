@@ -1,12 +1,12 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Administrador;
-import co.ufps.refupet.domain.entities.Solicitante;
-import co.ufps.refupet.domain.entities.Usuario;
-import co.ufps.refupet.domain.entities.Veterinario;
-import co.ufps.refupet.domain.entities.Voluntario;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Administrador;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.Solicitante;
+import co.ufps.refupet.domain.usuario.Usuario;
+import co.ufps.refupet.domain.usuario.UsuarioId;
+import co.ufps.refupet.domain.usuario.Veterinario;
+import co.ufps.refupet.domain.usuario.Voluntario;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.UsuarioJpa;
 
 import java.util.Objects;

@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.repository;
 
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.enums.EstadoUbicacionAnimal;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.AnimalJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.mapper.AnimalMapper;
 import jakarta.enterprise.context.ApplicationScoped;

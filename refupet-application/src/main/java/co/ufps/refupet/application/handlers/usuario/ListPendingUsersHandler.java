@@ -4,9 +4,9 @@ import co.ufps.refupet.application.commands.seguridad.ValidateRolePermissionComm
 import co.ufps.refupet.application.dto.UsuarioDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.queries.usuario.ListPendingUsersQuery;
-import co.ufps.refupet.domain.enums.EstadoCuenta;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.repositories.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.EstadoCuenta;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

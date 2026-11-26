@@ -1,9 +1,9 @@
 package co.ufps.refupet.application.commands.usuario;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.enums.RolUsuario;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.RolUsuario;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 
 /**
  * Regla 26: el administrador crea una cuenta de usuario con un perfil.

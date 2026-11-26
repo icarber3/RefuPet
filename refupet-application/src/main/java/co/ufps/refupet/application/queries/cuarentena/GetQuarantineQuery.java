@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.cuarentena;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
 
 /**
  * Consultar una cuarentena.

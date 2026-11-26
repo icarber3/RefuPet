@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.cuarentena;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Consultar la cuarentena activa (o la más reciente) de un animal.

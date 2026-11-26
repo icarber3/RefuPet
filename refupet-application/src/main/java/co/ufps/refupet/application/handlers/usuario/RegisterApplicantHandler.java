@@ -2,10 +2,10 @@ package co.ufps.refupet.application.handlers.usuario;
 
 import co.ufps.refupet.application.commands.usuario.RegisterApplicantCommand;
 import co.ufps.refupet.application.dto.SolicitanteDTO;
-import co.ufps.refupet.domain.entities.Solicitante;
-import co.ufps.refupet.domain.exceptions.EmailAlreadyRegisteredException;
-import co.ufps.refupet.domain.repositories.IUsuarioRepository;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.EmailAlreadyRegisteredException;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.Solicitante;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;

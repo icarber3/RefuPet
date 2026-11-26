@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.memory;
 
-import co.ufps.refupet.domain.entities.Vacunacion;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.VacunacionId;
-import co.ufps.refupet.domain.repositories.IVacunacionRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.clinica.IVacunacionRepository;
+import co.ufps.refupet.domain.clinica.Vacunacion;
+import co.ufps.refupet.domain.clinica.VacunacionId;
 
 import java.util.List;
 

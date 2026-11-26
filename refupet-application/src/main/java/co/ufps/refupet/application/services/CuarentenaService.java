@@ -1,13 +1,13 @@
 package co.ufps.refupet.application.services;
 
 import co.ufps.refupet.application.dto.CuarentenaDTO;
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.exceptions.CuarentenaNotFoundException;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.CuarentenaId;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
-import co.ufps.refupet.domain.repositories.ICuarentenaRepository;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.CuarentenaNotFoundException;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

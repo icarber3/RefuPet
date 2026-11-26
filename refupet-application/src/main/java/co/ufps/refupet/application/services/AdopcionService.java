@@ -1,17 +1,17 @@
 package co.ufps.refupet.application.services;
 
-import co.ufps.refupet.domain.entities.Adopcion;
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.entities.SolicitudAdopcion;
-import co.ufps.refupet.domain.exceptions.AdopcionNotFoundException;
-import co.ufps.refupet.domain.exceptions.AnimalNotFoundException;
-import co.ufps.refupet.domain.exceptions.SolicitudAdopcionNotFoundException;
-import co.ufps.refupet.domain.ids.AdopcionId;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.SolicitudAdopcionId;
-import co.ufps.refupet.domain.repositories.IAdopcionRepository;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
-import co.ufps.refupet.domain.repositories.ISolicitudAdopcionRepository;
+import co.ufps.refupet.domain.adopcion.Adopcion;
+import co.ufps.refupet.domain.adopcion.AdopcionId;
+import co.ufps.refupet.domain.adopcion.AdopcionNotFoundException;
+import co.ufps.refupet.domain.adopcion.IAdopcionRepository;
+import co.ufps.refupet.domain.adopcion.ISolicitudAdopcionRepository;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcion;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcionId;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcionNotFoundException;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalNotFoundException;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

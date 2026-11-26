@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.services;
 
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
+import co.ufps.refupet.domain.InvalidDomainDataException;
 
 import java.time.Clock;
 import java.time.LocalDate;

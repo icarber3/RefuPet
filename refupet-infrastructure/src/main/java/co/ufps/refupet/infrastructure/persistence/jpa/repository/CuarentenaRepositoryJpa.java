@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.repository;
 
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.CuarentenaId;
-import co.ufps.refupet.domain.repositories.ICuarentenaRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.CuarentenaJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.mapper.CuarentenaMapper;
 import jakarta.enterprise.context.ApplicationScoped;

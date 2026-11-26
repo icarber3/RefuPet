@@ -1,10 +1,10 @@
 package co.ufps.refupet.integracion;
 
-import co.ufps.refupet.domain.entities.Administrador;
-import co.ufps.refupet.domain.enums.EstadoCuenta;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.repositories.IUsuarioRepository;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Administrador;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.EstadoCuenta;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import io.restassured.http.ContentType;

@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.adopcion;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.enums.EstadoSolicitudAdopcion;
+import co.ufps.refupet.domain.adopcion.EstadoSolicitudAdopcion;
 
 import java.util.Optional;
 

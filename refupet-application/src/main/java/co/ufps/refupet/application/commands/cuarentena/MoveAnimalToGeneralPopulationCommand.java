@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.cuarentena;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
 
 /**
  * Regla 16: registrar el paso del animal a poblacion general.

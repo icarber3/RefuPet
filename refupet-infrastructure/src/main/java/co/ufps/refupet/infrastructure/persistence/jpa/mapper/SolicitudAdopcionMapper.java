@@ -1,10 +1,10 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.SolicitudAdopcion;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.SolicitudAdopcionId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.EvaluacionCompatibilidad;
+import co.ufps.refupet.domain.adopcion.EvaluacionCompatibilidad;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcion;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcionId;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.SolicitudAdopcionJpa;
 
 import java.util.Objects;

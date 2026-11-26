@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.clinica;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Regla 10: consultar el historial clínico de un animal.

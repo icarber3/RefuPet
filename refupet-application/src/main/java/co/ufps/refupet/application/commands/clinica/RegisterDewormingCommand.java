@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.clinica;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 import java.time.LocalDate;
 

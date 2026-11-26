@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.usuario;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Email;
 
 /**
  * Regla 18: registro de un solicitante de adopción. No requiere un usuario previo:

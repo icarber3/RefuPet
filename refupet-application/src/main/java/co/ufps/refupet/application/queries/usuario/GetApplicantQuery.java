@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.usuario;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.UsuarioId;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 
 /**
  * Regla 20: consultar la información de un solicitante.

@@ -1,15 +1,15 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Administrador;
-import co.ufps.refupet.domain.entities.Solicitante;
-import co.ufps.refupet.domain.entities.Usuario;
-import co.ufps.refupet.domain.entities.Veterinario;
-import co.ufps.refupet.domain.entities.Voluntario;
-import co.ufps.refupet.domain.enums.EstadoCuenta;
-import co.ufps.refupet.domain.enums.RolUsuario;
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.InvalidDomainDataException;
+import co.ufps.refupet.domain.usuario.Administrador;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.EstadoCuenta;
+import co.ufps.refupet.domain.usuario.RolUsuario;
+import co.ufps.refupet.domain.usuario.Solicitante;
+import co.ufps.refupet.domain.usuario.Usuario;
+import co.ufps.refupet.domain.usuario.UsuarioId;
+import co.ufps.refupet.domain.usuario.Veterinario;
+import co.ufps.refupet.domain.usuario.Voluntario;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.UsuarioJpa;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;

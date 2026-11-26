@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.animal;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Regla 4: consultar las observaciones de comportamiento de un animal.

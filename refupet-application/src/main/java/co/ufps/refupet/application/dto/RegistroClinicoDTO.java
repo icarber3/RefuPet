@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.RegistroClinico;
+import co.ufps.refupet.domain.clinica.RegistroClinico;
 
 import java.time.LocalDate;
 

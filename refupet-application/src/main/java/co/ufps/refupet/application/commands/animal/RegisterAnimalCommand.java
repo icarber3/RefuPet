@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.animal;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.enums.Especie;
+import co.ufps.refupet.domain.animal.Especie;
 
 import java.time.LocalDate;
 

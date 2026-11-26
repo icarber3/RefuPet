@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.ObservacionComportamiento;
+import co.ufps.refupet.domain.animal.ObservacionComportamiento;
 
 import java.time.LocalDateTime;
 

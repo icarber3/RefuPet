@@ -5,7 +5,7 @@ import co.ufps.refupet.application.dto.AnimalDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.queries.adopcion.GetAvailableAnimalsQuery;
 import co.ufps.refupet.application.services.DisponibilidadAdopcionService;
-import co.ufps.refupet.domain.enums.Operacion;
+import co.ufps.refupet.domain.usuario.Operacion;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

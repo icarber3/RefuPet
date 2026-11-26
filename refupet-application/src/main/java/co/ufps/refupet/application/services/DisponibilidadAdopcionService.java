@@ -1,11 +1,11 @@
 package co.ufps.refupet.application.services;
 
-import co.ufps.refupet.domain.entities.Adopcion;
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.enums.EstadoUbicacionAnimal;
-import co.ufps.refupet.domain.exceptions.InvalidAnimalStateException;
-import co.ufps.refupet.domain.repositories.IAdopcionRepository;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
+import co.ufps.refupet.domain.adopcion.Adopcion;
+import co.ufps.refupet.domain.adopcion.IAdopcionRepository;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.animal.InvalidAnimalStateException;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

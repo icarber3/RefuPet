@@ -1,10 +1,10 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.repository;
 
-import co.ufps.refupet.domain.entities.Usuario;
-import co.ufps.refupet.domain.enums.EstadoCuenta;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.repositories.IUsuarioRepository;
-import co.ufps.refupet.domain.valueobjects.Email;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.EstadoCuenta;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.Usuario;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.UsuarioJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.mapper.UsuarioMapper;
 import jakarta.enterprise.context.ApplicationScoped;

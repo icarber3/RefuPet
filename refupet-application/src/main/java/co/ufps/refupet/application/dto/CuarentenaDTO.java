@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.valueobjects.PeriodoCuarentena;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.PeriodoCuarentena;
 
 import java.time.LocalDate;
 

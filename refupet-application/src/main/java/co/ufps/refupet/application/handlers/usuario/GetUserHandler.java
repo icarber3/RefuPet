@@ -4,10 +4,10 @@ import co.ufps.refupet.application.commands.seguridad.ValidateRolePermissionComm
 import co.ufps.refupet.application.dto.UsuarioDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.queries.usuario.GetUserQuery;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.exceptions.UsuarioNotFoundException;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.repositories.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
+import co.ufps.refupet.domain.usuario.UsuarioId;
+import co.ufps.refupet.domain.usuario.UsuarioNotFoundException;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

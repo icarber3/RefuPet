@@ -1,14 +1,14 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.entities.ObservacionComportamiento;
-import co.ufps.refupet.domain.enums.Especie;
-import co.ufps.refupet.domain.enums.EstadoUbicacionAnimal;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.ObservacionId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.EstadoSalud;
-import co.ufps.refupet.domain.valueobjects.RegistroIngreso;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.Especie;
+import co.ufps.refupet.domain.animal.EstadoSalud;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.animal.ObservacionComportamiento;
+import co.ufps.refupet.domain.animal.ObservacionId;
+import co.ufps.refupet.domain.animal.RegistroIngreso;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.AnimalJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.ObservacionComportamientoJpa;
 import org.junit.jupiter.api.Test;
@@ -147,9 +147,9 @@ class AnimalMapperTest {
     @Test
     void elAnimalReconstruidoConservaSusInvariantes() {
         Animal reconstruido = AnimalMapper.toDomain(AnimalMapper.toJpa(animalCompleto()));
-        assertThrows(co.ufps.refupet.domain.exceptions.InvalidAnimalStateException.class,
+        assertThrows(co.ufps.refupet.domain.animal.InvalidAnimalStateException.class,
                 reconstruido::marcarEsterilizado);
-        assertThrows(co.ufps.refupet.domain.exceptions.InvalidAnimalStateException.class,
+        assertThrows(co.ufps.refupet.domain.animal.InvalidAnimalStateException.class,
                 reconstruido::ingresarACuarentena);
     }
 

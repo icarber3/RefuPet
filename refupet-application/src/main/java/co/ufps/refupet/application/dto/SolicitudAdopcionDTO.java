@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.SolicitudAdopcion;
-import co.ufps.refupet.domain.valueobjects.EvaluacionCompatibilidad;
+import co.ufps.refupet.domain.adopcion.EvaluacionCompatibilidad;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcion;
 
 import java.time.LocalDateTime;
 

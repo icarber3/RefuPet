@@ -1,14 +1,14 @@
 package co.ufps.refupet.api.error;
 
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.enums.RolUsuario;
-import co.ufps.refupet.domain.exceptions.AnimalNotFoundException;
-import co.ufps.refupet.domain.exceptions.EmailAlreadyRegisteredException;
-import co.ufps.refupet.domain.exceptions.InvalidAnimalStateException;
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
-import co.ufps.refupet.domain.exceptions.QuarantinePeriodNotCompletedException;
-import co.ufps.refupet.domain.exceptions.UnauthorizedRoleOperationException;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.InvalidDomainDataException;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalNotFoundException;
+import co.ufps.refupet.domain.animal.InvalidAnimalStateException;
+import co.ufps.refupet.domain.cuarentena.QuarantinePeriodNotCompletedException;
+import co.ufps.refupet.domain.usuario.EmailAlreadyRegisteredException;
+import co.ufps.refupet.domain.usuario.Operacion;
+import co.ufps.refupet.domain.usuario.RolUsuario;
+import co.ufps.refupet.domain.usuario.UnauthorizedRoleOperationException;
 import com.fasterxml.jackson.core.JsonParseException;
 import jakarta.persistence.PersistenceException;
 import jakarta.transaction.RollbackException;

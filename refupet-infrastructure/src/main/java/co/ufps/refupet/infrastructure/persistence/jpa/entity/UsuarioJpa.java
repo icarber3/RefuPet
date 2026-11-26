@@ -1,7 +1,7 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.entity;
 
-import co.ufps.refupet.domain.enums.EstadoCuenta;
-import co.ufps.refupet.domain.enums.RolUsuario;
+import co.ufps.refupet.domain.usuario.EstadoCuenta;
+import co.ufps.refupet.domain.usuario.RolUsuario;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

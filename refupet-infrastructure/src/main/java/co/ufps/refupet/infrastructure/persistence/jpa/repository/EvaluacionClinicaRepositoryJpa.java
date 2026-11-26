@@ -1,8 +1,8 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.repository;
 
-import co.ufps.refupet.domain.entities.EvaluacionClinica;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.repositories.IEvaluacionClinicaRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.clinica.EvaluacionClinica;
+import co.ufps.refupet.domain.clinica.IEvaluacionClinicaRepository;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.EvaluacionClinicaJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.mapper.RegistroClinicoMapper;
 import jakarta.enterprise.context.ApplicationScoped;

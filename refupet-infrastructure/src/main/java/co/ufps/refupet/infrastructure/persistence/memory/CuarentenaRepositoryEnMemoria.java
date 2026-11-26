@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.memory;
 
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.CuarentenaId;
-import co.ufps.refupet.domain.repositories.ICuarentenaRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
 
 import java.util.List;
 import java.util.Optional;

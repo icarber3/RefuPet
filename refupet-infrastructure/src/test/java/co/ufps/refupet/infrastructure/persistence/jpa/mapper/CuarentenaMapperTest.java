@@ -1,16 +1,16 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.entities.Veterinario;
-import co.ufps.refupet.domain.enums.EstadoCuarentena;
-import co.ufps.refupet.domain.enums.EstadoCuenta;
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
-import co.ufps.refupet.domain.exceptions.InvalidQuarantineStateException;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.CuarentenaId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.Email;
-import co.ufps.refupet.domain.valueobjects.PeriodoCuarentena;
+import co.ufps.refupet.domain.InvalidDomainDataException;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.EstadoCuarentena;
+import co.ufps.refupet.domain.cuarentena.InvalidQuarantineStateException;
+import co.ufps.refupet.domain.cuarentena.PeriodoCuarentena;
+import co.ufps.refupet.domain.usuario.Email;
+import co.ufps.refupet.domain.usuario.EstadoCuenta;
+import co.ufps.refupet.domain.usuario.UsuarioId;
+import co.ufps.refupet.domain.usuario.Veterinario;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.CuarentenaJpa;
 import org.junit.jupiter.api.Test;
 

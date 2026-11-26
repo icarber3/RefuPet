@@ -1,7 +1,7 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.entity;
 
-import co.ufps.refupet.domain.enums.Especie;
-import co.ufps.refupet.domain.enums.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.animal.Especie;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

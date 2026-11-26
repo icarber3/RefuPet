@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.SeguimientoAdopcion;
+import co.ufps.refupet.domain.adopcion.SeguimientoAdopcion;
 
 import java.time.LocalDate;
 

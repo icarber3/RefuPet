@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.Tratamiento;
+import co.ufps.refupet.domain.clinica.Tratamiento;
 
 import java.time.LocalDate;
 

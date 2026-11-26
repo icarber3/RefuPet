@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.adopcion;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AdopcionId;
+import co.ufps.refupet.domain.adopcion.AdopcionId;
 
 /**
  * Consultar una adopción formalizada con sus seguimientos y devolución.

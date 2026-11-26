@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.animal;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Reglas 4 y 36: el voluntario registra una observación de comportamiento.

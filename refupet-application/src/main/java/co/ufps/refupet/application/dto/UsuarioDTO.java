@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.Usuario;
+import co.ufps.refupet.domain.usuario.Usuario;
 
 import java.time.LocalDateTime;
 

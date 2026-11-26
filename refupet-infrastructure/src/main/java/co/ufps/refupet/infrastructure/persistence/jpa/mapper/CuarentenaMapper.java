@@ -1,10 +1,10 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.CuarentenaId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.PeriodoCuarentena;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
+import co.ufps.refupet.domain.cuarentena.PeriodoCuarentena;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.CuarentenaJpa;
 
 import java.util.Objects;

@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.Adopcion;
-import co.ufps.refupet.domain.valueobjects.Devolucion;
+import co.ufps.refupet.domain.adopcion.Adopcion;
+import co.ufps.refupet.domain.adopcion.Devolucion;
 
 import java.time.LocalDate;
 import java.util.List;

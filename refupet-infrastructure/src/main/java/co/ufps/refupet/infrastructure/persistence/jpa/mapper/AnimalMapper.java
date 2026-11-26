@@ -1,12 +1,12 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.mapper;
 
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.entities.ObservacionComportamiento;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.ObservacionId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.valueobjects.EstadoSalud;
-import co.ufps.refupet.domain.valueobjects.RegistroIngreso;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.EstadoSalud;
+import co.ufps.refupet.domain.animal.ObservacionComportamiento;
+import co.ufps.refupet.domain.animal.ObservacionId;
+import co.ufps.refupet.domain.animal.RegistroIngreso;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.AnimalJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.ObservacionComportamientoJpa;
 

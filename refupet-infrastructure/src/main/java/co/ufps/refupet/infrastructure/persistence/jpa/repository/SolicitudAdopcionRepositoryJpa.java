@@ -1,10 +1,10 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.repository;
 
-import co.ufps.refupet.domain.entities.SolicitudAdopcion;
-import co.ufps.refupet.domain.enums.EstadoSolicitudAdopcion;
-import co.ufps.refupet.domain.ids.SolicitudAdopcionId;
-import co.ufps.refupet.domain.ids.UsuarioId;
-import co.ufps.refupet.domain.repositories.ISolicitudAdopcionRepository;
+import co.ufps.refupet.domain.adopcion.EstadoSolicitudAdopcion;
+import co.ufps.refupet.domain.adopcion.ISolicitudAdopcionRepository;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcion;
+import co.ufps.refupet.domain.adopcion.SolicitudAdopcionId;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import co.ufps.refupet.infrastructure.persistence.jpa.entity.SolicitudAdopcionJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.mapper.SolicitudAdopcionMapper;
 import jakarta.enterprise.context.ApplicationScoped;

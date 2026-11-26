@@ -26,7 +26,7 @@ Paquete raíz: `co.ufps.refupet`.
 
 | Capa | Paquetes |
 |---|---|
-| domain | `entities`, `valueobjects`, `ids`, `enums`, `exceptions`, `repositories` |
+| domain | `<módulo>` (`usuario`, `animal`, `clinica`, `cuarentena`, `adopcion`): entidades, IDs, Value Objects, enums, excepciones y contrato de repositorio de cada módulo; en la raíz, lo compartido (`DomainException`, `InvalidDomainDataException`, `ResourceNotFoundException`, `Identificador`, `Validaciones`) |
 | application | `commands.<módulo>`, `queries.<módulo>`, `handlers.<módulo>`, `dto`, `services` |
 | infrastructure | `persistence.memory`, `config` |
 

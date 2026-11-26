@@ -4,10 +4,10 @@ import co.ufps.refupet.application.commands.seguridad.ValidateRolePermissionComm
 import co.ufps.refupet.application.dto.RegistroIngresoDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.queries.animal.GetAnimalIngressTraceQuery;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.exceptions.AnimalNotFoundException;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalNotFoundException;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

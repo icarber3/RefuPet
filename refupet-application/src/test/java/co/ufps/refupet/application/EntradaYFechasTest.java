@@ -6,10 +6,10 @@ import co.ufps.refupet.application.commands.usuario.CreateUserCommand;
 import co.ufps.refupet.application.commands.usuario.RegisterApplicantCommand;
 import co.ufps.refupet.application.queries.adopcion.ListAdoptionRequestsQuery;
 import co.ufps.refupet.application.services.FechaOperacion;
-import co.ufps.refupet.domain.enums.Especie;
-import co.ufps.refupet.domain.enums.EstadoSolicitudAdopcion;
-import co.ufps.refupet.domain.enums.RolUsuario;
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
+import co.ufps.refupet.domain.InvalidDomainDataException;
+import co.ufps.refupet.domain.adopcion.EstadoSolicitudAdopcion;
+import co.ufps.refupet.domain.animal.Especie;
+import co.ufps.refupet.domain.usuario.RolUsuario;
 import org.junit.jupiter.api.Test;
 
 import java.time.Clock;

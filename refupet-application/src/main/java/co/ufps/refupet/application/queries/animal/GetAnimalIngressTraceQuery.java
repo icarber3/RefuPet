@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.queries.animal;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Regla 5: consultar la trazabilidad del ingreso de un animal.

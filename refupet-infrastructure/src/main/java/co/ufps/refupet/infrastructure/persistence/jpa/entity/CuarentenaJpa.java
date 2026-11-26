@@ -1,6 +1,6 @@
 package co.ufps.refupet.infrastructure.persistence.jpa.entity;
 
-import co.ufps.refupet.domain.enums.EstadoCuarentena;
+import co.ufps.refupet.domain.cuarentena.EstadoCuarentena;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

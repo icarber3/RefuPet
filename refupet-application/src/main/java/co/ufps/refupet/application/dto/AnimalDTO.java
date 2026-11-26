@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.valueobjects.EstadoSalud;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.EstadoSalud;
 
 import java.time.LocalDate;
 

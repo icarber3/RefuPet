@@ -5,10 +5,10 @@ import co.ufps.refupet.application.commands.seguridad.ValidateRolePermissionComm
 import co.ufps.refupet.application.dto.CuarentenaDTO;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
 import co.ufps.refupet.application.services.CuarentenaService;
-import co.ufps.refupet.domain.entities.Cuarentena;
-import co.ufps.refupet.domain.entities.Usuario;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.repositories.ICuarentenaRepository;
+import co.ufps.refupet.domain.cuarentena.Cuarentena;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
+import co.ufps.refupet.domain.usuario.Usuario;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;

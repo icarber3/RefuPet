@@ -1,15 +1,15 @@
 package co.ufps.refupet.integracion;
 
-import co.ufps.refupet.domain.repositories.IAdopcionRepository;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
-import co.ufps.refupet.domain.repositories.ICuarentenaRepository;
-import co.ufps.refupet.domain.repositories.IDesparasitacionRepository;
-import co.ufps.refupet.domain.repositories.IEsterilizacionRepository;
-import co.ufps.refupet.domain.repositories.IEvaluacionClinicaRepository;
-import co.ufps.refupet.domain.repositories.ISolicitudAdopcionRepository;
-import co.ufps.refupet.domain.repositories.ITratamientoRepository;
-import co.ufps.refupet.domain.repositories.IUsuarioRepository;
-import co.ufps.refupet.domain.repositories.IVacunacionRepository;
+import co.ufps.refupet.domain.adopcion.IAdopcionRepository;
+import co.ufps.refupet.domain.adopcion.ISolicitudAdopcionRepository;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.clinica.IDesparasitacionRepository;
+import co.ufps.refupet.domain.clinica.IEsterilizacionRepository;
+import co.ufps.refupet.domain.clinica.IEvaluacionClinicaRepository;
+import co.ufps.refupet.domain.clinica.ITratamientoRepository;
+import co.ufps.refupet.domain.clinica.IVacunacionRepository;
+import co.ufps.refupet.domain.cuarentena.ICuarentenaRepository;
+import co.ufps.refupet.domain.usuario.IUsuarioRepository;
 import co.ufps.refupet.infrastructure.config.RefuPetAplicacion;
 import co.ufps.refupet.infrastructure.persistence.jpa.repository.AdopcionRepositoryJpa;
 import co.ufps.refupet.infrastructure.persistence.jpa.repository.AnimalRepositoryJpa;

@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.memory;
 
-import co.ufps.refupet.domain.entities.Tratamiento;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.TratamientoId;
-import co.ufps.refupet.domain.repositories.ITratamientoRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.clinica.ITratamientoRepository;
+import co.ufps.refupet.domain.clinica.Tratamiento;
+import co.ufps.refupet.domain.clinica.TratamientoId;
 
 import java.util.List;
 

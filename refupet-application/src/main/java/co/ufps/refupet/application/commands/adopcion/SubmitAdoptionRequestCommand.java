@@ -1,7 +1,7 @@
 package co.ufps.refupet.application.commands.adopcion;
 
 import co.ufps.refupet.application.Entrada;
-import co.ufps.refupet.domain.ids.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalId;
 
 /**
  * Reglas 19 y 38: el solicitante presenta una solicitud de adopción para un animal disponible.

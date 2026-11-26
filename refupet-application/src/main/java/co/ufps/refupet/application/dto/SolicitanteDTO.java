@@ -1,6 +1,6 @@
 package co.ufps.refupet.application.dto;
 
-import co.ufps.refupet.domain.entities.Solicitante;
+import co.ufps.refupet.domain.usuario.Solicitante;
 
 /**
  * Información del solicitante de adopción (regla 20).

@@ -1,13 +1,12 @@
 package co.ufps.refupet.domain;
 
-import co.ufps.refupet.domain.enums.Especie;
-import co.ufps.refupet.domain.enums.EstadoSolicitudAdopcion;
-import co.ufps.refupet.domain.enums.EstadoUbicacionAnimal;
-import co.ufps.refupet.domain.enums.RolUsuario;
-import co.ufps.refupet.domain.exceptions.InvalidDomainDataException;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.CuarentenaId;
-import co.ufps.refupet.domain.ids.UsuarioId;
+import co.ufps.refupet.domain.adopcion.EstadoSolicitudAdopcion;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.Especie;
+import co.ufps.refupet.domain.animal.EstadoUbicacionAnimal;
+import co.ufps.refupet.domain.cuarentena.CuarentenaId;
+import co.ufps.refupet.domain.usuario.RolUsuario;
+import co.ufps.refupet.domain.usuario.UsuarioId;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;

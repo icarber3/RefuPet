@@ -1,9 +1,9 @@
 package co.ufps.refupet.infrastructure.persistence.memory;
 
-import co.ufps.refupet.domain.entities.Esterilizacion;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.ids.EsterilizacionId;
-import co.ufps.refupet.domain.repositories.IEsterilizacionRepository;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.clinica.Esterilizacion;
+import co.ufps.refupet.domain.clinica.EsterilizacionId;
+import co.ufps.refupet.domain.clinica.IEsterilizacionRepository;
 
 import java.util.List;
 

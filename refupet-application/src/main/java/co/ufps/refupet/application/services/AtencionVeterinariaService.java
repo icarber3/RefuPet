@@ -2,12 +2,12 @@ package co.ufps.refupet.application.services;
 
 import co.ufps.refupet.application.commands.seguridad.ValidateRolePermissionCommand;
 import co.ufps.refupet.application.handlers.seguridad.ValidateRolePermissionHandler;
-import co.ufps.refupet.domain.entities.Animal;
-import co.ufps.refupet.domain.entities.Usuario;
-import co.ufps.refupet.domain.enums.Operacion;
-import co.ufps.refupet.domain.exceptions.AnimalNotFoundException;
-import co.ufps.refupet.domain.ids.AnimalId;
-import co.ufps.refupet.domain.repositories.IAnimalRepository;
+import co.ufps.refupet.domain.animal.Animal;
+import co.ufps.refupet.domain.animal.AnimalId;
+import co.ufps.refupet.domain.animal.AnimalNotFoundException;
+import co.ufps.refupet.domain.animal.IAnimalRepository;
+import co.ufps.refupet.domain.usuario.Operacion;
+import co.ufps.refupet.domain.usuario.Usuario;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
